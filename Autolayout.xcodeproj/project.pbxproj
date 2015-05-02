@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10302291AE8C698002F5799 /* coffeepress_empty_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B10302271AE8C698002F5799 /* coffeepress_empty_1.png */; };
+		B103022A1AE8C698002F5799 /* coffeepress_empty_2.png in Resources */ = {isa = PBXBuildFile; fileRef = B10302281AE8C698002F5799 /* coffeepress_empty_2.png */; };
+		B12E5B191AEB7BD8009DA5BF /* quizshow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B12E5B181AEB7BD8009DA5BF /* quizshow.ttf */; };
 		B14B1AAE1AE0D6FD00E2A1AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B1AAD1AE0D6FD00E2A1AA /* AppDelegate.swift */; };
 		B14B1AB01AE0D6FD00E2A1AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B1AAF1AE0D6FD00E2A1AA /* ViewController.swift */; };
 		B14B1AB31AE0D6FD00E2A1AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14B1AB11AE0D6FD00E2A1AA /* Main.storyboard */; };
 		B14B1AB51AE0D6FD00E2A1AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14B1AB41AE0D6FD00E2A1AA /* Images.xcassets */; };
 		B14B1AB81AE0D6FD00E2A1AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14B1AB61AE0D6FD00E2A1AA /* LaunchScreen.xib */; };
 		B14B1AC41AE0D6FD00E2A1AA /* AutolayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B1AC31AE0D6FD00E2A1AA /* AutolayoutTests.swift */; };
+		B1D450D41AE18CB6001355AE /* coffeebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D450D21AE18CB6001355AE /* coffeebtn.png */; };
+		B1D450D51AE18CB6001355AE /* coffeebtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D450D31AE18CB6001355AE /* coffeebtn2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B10302271AE8C698002F5799 /* coffeepress_empty_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeepress_empty_1.png; sourceTree = "<group>"; };
+		B10302281AE8C698002F5799 /* coffeepress_empty_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeepress_empty_2.png; sourceTree = "<group>"; };
+		B12E5B181AEB7BD8009DA5BF /* quizshow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = quizshow.ttf; sourceTree = "<group>"; };
 		B14B1AA81AE0D6FD00E2A1AA /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14B1AAC1AE0D6FD00E2A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14B1AAD1AE0D6FD00E2A1AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B14B1AAF1AE0D6FD00E2A1AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B14B1AAF1AE0D6FD00E2A1AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		B14B1AB21AE0D6FD00E2A1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B14B1AB41AE0D6FD00E2A1AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B14B1AB71AE0D6FD00E2A1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B14B1ABD1AE0D6FD00E2A1AA /* AutolayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14B1AC21AE0D6FD00E2A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14B1AC31AE0D6FD00E2A1AA /* AutolayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutTests.swift; sourceTree = "<group>"; };
+		B1D450D21AE18CB6001355AE /* coffeebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeebtn.png; sourceTree = "<group>"; };
+		B1D450D31AE18CB6001355AE /* coffeebtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeebtn2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 		B14B1AAB1AE0D6FD00E2A1AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B12E5B181AEB7BD8009DA5BF /* quizshow.ttf */,
+				B10302271AE8C698002F5799 /* coffeepress_empty_1.png */,
+				B10302281AE8C698002F5799 /* coffeepress_empty_2.png */,
+				B1D450D21AE18CB6001355AE /* coffeebtn.png */,
+				B1D450D31AE18CB6001355AE /* coffeebtn2.png */,
 				B14B1AAC1AE0D6FD00E2A1AA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +207,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D450D41AE18CB6001355AE /* coffeebtn.png in Resources */,
 				B14B1AB31AE0D6FD00E2A1AA /* Main.storyboard in Resources */,
+				B12E5B191AEB7BD8009DA5BF /* quizshow.ttf in Resources */,
 				B14B1AB81AE0D6FD00E2A1AA /* LaunchScreen.xib in Resources */,
+				B1D450D51AE18CB6001355AE /* coffeebtn2.png in Resources */,
 				B14B1AB51AE0D6FD00E2A1AA /* Images.xcassets in Resources */,
+				B103022A1AE8C698002F5799 /* coffeepress_empty_2.png in Resources */,
+				B10302291AE8C698002F5799 /* coffeepress_empty_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +425,7 @@
 				B14B1AC91AE0D6FD00E2A1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B14B1ACA1AE0D6FD00E2A1AA /* Build configuration list for PBXNativeTarget "AutolayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				B14B1ACC1AE0D6FD00E2A1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
