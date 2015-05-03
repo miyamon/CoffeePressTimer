@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pg-fq-gMP">
-                                <rect key="frame" x="104" y="432" width="113" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pg-fq-gMP">
+                                <rect key="frame" x="104" y="426" width="113" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="gRr-Xn-xNa"/>
                                     <constraint firstAttribute="width" constant="113" id="vz2-qO-89y"/>

@@ -20,15 +20,23 @@ class ViewController: UIViewController {
     var colorNum:UInt!
     var timer:NSTimer!
     let colorView = UIView()
-      @IBAction func brewbtn(sender: UIButton) {
+    
+    
+    @IBAction func brewbtn(sender: UIButton) {
+
+        let b = self.pressView.bounds
+        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 20, options: nil, animations: {
+            // ボタンサイズの変更
+            self.pressView.bounds = CGRectMake(b.origin.x - 20, b.origin.y, b.size.width + 80, b.size.height)
+            
+            }, completion: nil)
+    
         if ope == 0{
            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
             ++ope
         }
 
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +62,7 @@ class ViewController: UIViewController {
         self.view.addSubview(colorView)
         self.view.sendSubviewToBack(colorView)
         
-        if countNum == 0{
+        if countNum == 0 && timer.valid == true{
             timerlabel.text = String(countNum)
             timer.invalidate()
             countNum = 240
@@ -62,17 +70,6 @@ class ViewController: UIViewController {
             colorNum = 0x123456
             self.view.addSubview(colorView)
             self.view.sendSubviewToBack(colorView)
-            
-        }
-
-        if countNum == 0 && timer.valid == true{
-            timer.invalidate()
-            countNum = 240
-            ope = 0
-            colorNum = 0x123456
-            self.view.addSubview(colorView)
-            self.view.sendSubviewToBack(colorView)
-            
         }
  
     }
