@@ -24,13 +24,6 @@ class ViewController: UIViewController {
     
     @IBAction func brewbtn(sender: UIButton) {
 
-        let b = self.pressView.bounds
-        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 20, options: nil, animations: {
-            // ボタンサイズの変更
-            self.pressView.bounds = CGRectMake(b.origin.x - 20, b.origin.y, b.size.width + 80, b.size.height)
-            
-            }, completion: nil)
-    
         if ope == 0{
            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
             ++ope
@@ -63,6 +56,17 @@ class ViewController: UIViewController {
         self.view.sendSubviewToBack(colorView)
         
         if countNum == 0 && timer.valid == true{
+            
+            let b = self.pressView.bounds
+            UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 20, options: nil, animations: {
+                // ボタンサイズの変更
+                self.pressView.bounds = CGRectMake(b.origin.x - 20, b.origin.y, b.size.width + 80, b.size.height)
+                
+                }, completion: nil)
+            
+
+            
+            
             timerlabel.text = String(countNum)
             timer.invalidate()
             countNum = 240
