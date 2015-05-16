@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FFw-fw-rAh">
+                                <rect key="frame" x="100" y="241" width="121" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="XcL-aO-8Cc"/>
+                                    <constraint firstAttribute="height" constant="180" id="YAr-h4-mLX"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pg-fq-gMP">
                                 <rect key="frame" x="104" y="426" width="113" height="44"/>
                                 <constraints>
@@ -26,6 +33,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UVF-7T-q4y">
+                                <rect key="frame" x="93" y="-6" width="134" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="GM3-zd-0Vs"/>
+                                    <constraint firstAttribute="width" constant="134" id="hlI-xq-tb9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeepress_empty_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-6O-249">
+                                <rect key="frame" x="81" y="189" width="158" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="3u3-vA-YyF"/>
+                                    <constraint firstAttribute="width" constant="158" id="KBo-gY-bnx"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx7-Sq-Brl">
                                 <rect key="frame" x="7" y="473" width="306" height="87"/>
                                 <constraints>
@@ -39,36 +60,24 @@
                                     <action selector="brewbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iC0-Pl-Frh"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVF-7T-q4y">
-                                <rect key="frame" x="93" y="0.0" width="134" height="255"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="255" id="GM3-zd-0Vs"/>
-                                    <constraint firstAttribute="width" constant="134" id="hlI-xq-tb9"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coffeepress_empty_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-6O-249">
-                                <rect key="frame" x="81" y="195" width="158" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="3u3-vA-YyF"/>
-                                    <constraint firstAttribute="width" constant="158" id="KBo-gY-bnx"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93333339691162109" green="0.94117653369903564" blue="0.9803922176361084" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Cx7-Sq-Brl" secondAttribute="bottom" constant="31" id="EX3-pX-thd"/>
                             <constraint firstAttribute="centerX" secondItem="jjS-6O-249" secondAttribute="centerX" id="HTs-a6-8Mv"/>
                             <constraint firstItem="7Pg-fq-gMP" firstAttribute="top" secondItem="UVF-7T-q4y" secondAttribute="bottom" constant="177" id="LEO-mi-59w"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Cx7-Sq-Brl" secondAttribute="bottom" constant="8" id="S90-Jn-XhO"/>
                             <constraint firstItem="Cx7-Sq-Brl" firstAttribute="top" secondItem="jjS-6O-249" secondAttribute="bottom" constant="44" id="TeT-uP-AGs"/>
                             <constraint firstAttribute="centerX" secondItem="7Pg-fq-gMP" secondAttribute="centerX" id="axS-nf-cbV"/>
+                            <constraint firstAttribute="centerX" secondItem="FFw-fw-rAh" secondAttribute="centerX" id="jAK-jo-388"/>
                             <constraint firstAttribute="centerX" secondItem="Cx7-Sq-Brl" secondAttribute="centerX" id="ntv-dB-4n4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Cx7-Sq-Brl" secondAttribute="bottom" constant="8" id="rEV-Xv-8zx"/>
                             <constraint firstAttribute="centerX" secondItem="UVF-7T-q4y" secondAttribute="centerX" id="vwa-2n-iZt"/>
+                            <constraint firstItem="7Pg-fq-gMP" firstAttribute="top" secondItem="FFw-fw-rAh" secondAttribute="bottom" constant="5" id="xlJ-tE-Uul"/>
                             <constraint firstItem="Cx7-Sq-Brl" firstAttribute="top" secondItem="7Pg-fq-gMP" secondAttribute="bottom" constant="3" id="yeC-YK-Ujp"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="colorView" destination="FFw-fw-rAh" id="xb3-D8-e9B"/>
                         <outlet property="pressView" destination="UVF-7T-q4y" id="l8Q-bn-Lw5"/>
                         <outlet property="timerlabel" destination="7Pg-fq-gMP" id="iVy-SQ-xnP"/>
                     </connections>

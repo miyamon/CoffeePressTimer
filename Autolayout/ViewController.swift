@@ -13,20 +13,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var mLabel: UILabel!
     @IBOutlet weak var pressView: UIImageView!
     @IBOutlet weak var timerlabel: UILabel!
+    @IBOutlet weak var colorView: UIImageView!
     var pimage:UIImage = UIImage(named: "coffeepress_empty_2.png")!
     var num:Int!
     var countNum = 240
     var ope = 0
     var colorNum:UInt!
     var timer:NSTimer!
-    let colorView = UIView()
+    
     
     
     @IBAction func brewbtn(sender: UIButton) {
 
         if ope == 0{
-           timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+           timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
             ++ope
+        }else{
+            timer.invalidate()
+            countNum = 240
+            ope = 0
         }
 
     }
@@ -37,8 +42,8 @@ class ViewController: UIViewController {
         colorView.frame = CGRectMake(0, 0, 420, 1000)
         colorView.backgroundColor = UIColor.brownColor()
         pressView.image = pimage
+        timerlabel.text = String(countNum)
         self.view.addSubview(pressView)
-
         self.view.addSubview(colorView)
         self.view.sendSubviewToBack(colorView)
         
@@ -49,7 +54,7 @@ class ViewController: UIViewController {
     func update() {
         timerlabel.text = String(countNum)
         --countNum
-        colorNum = 0xF5785A
+        colorNum = 0x240C00
 
         colorView.backgroundColor = UIColorFromRGB(colorNum)
         self.view.addSubview(colorView)
@@ -57,21 +62,22 @@ class ViewController: UIViewController {
         
         if countNum == 0 && timer.valid == true{
             
-            let b = self.pressView.bounds
+            let b = self.pressView.frame
+            println("\(b)")
             UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 20, options: nil, animations: {
                 // ボタンサイズの変更
                 self.pressView.bounds = CGRectMake(b.origin.x - 20, b.origin.y, b.size.width + 80, b.size.height)
                 
                 }, completion: nil)
             
-
+            
             
             
             timerlabel.text = String(countNum)
             timer.invalidate()
             countNum = 240
             ope = 0
-            colorNum = 0x123456
+            colorNum = 0x240C00
             self.view.addSubview(colorView)
             self.view.sendSubviewToBack(colorView)
         }
