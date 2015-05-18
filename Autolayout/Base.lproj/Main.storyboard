@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFw-fw-rAh">
-                                <rect key="frame" x="84" y="237" width="154" height="182"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FFw-fw-rAh">
+                                <rect key="frame" x="91" y="241" width="139" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="121" id="XcL-aO-8Cc"/>
-                                    <constraint firstAttribute="height" constant="180" id="YAr-h4-mLX"/>
+                                    <constraint firstAttribute="width" constant="139" id="O8B-Zw-8bb"/>
+                                    <constraint firstAttribute="height" constant="180" id="aTI-M5-SOS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pg-fq-gMP">
@@ -53,8 +53,8 @@
                                     <action selector="brewbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iC0-Pl-Frh"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coffeepress_empty_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-6O-249">
-                                <rect key="frame" x="74" y="188" width="172" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeepress_empty_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-6O-249">
+                                <rect key="frame" x="81" y="189" width="158" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="3u3-vA-YyF"/>
                                     <constraint firstAttribute="width" constant="158" id="KBo-gY-bnx"/>
