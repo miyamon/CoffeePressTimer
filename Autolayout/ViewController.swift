@@ -26,8 +26,9 @@ class ViewController: UIViewController {
     @IBAction func brewbtn(sender: UIButton) {
 
         if ope == 0{
-           timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+           timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
             ++ope
+            colorView.alpha = 0.1
         }else{
             timer.invalidate()
             countNum = 240
@@ -39,14 +40,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        colorView.frame = CGRectMake(0, 0, 420, 1000)
-        colorView.backgroundColor = UIColor.brownColor()
+        
         pressView.image = pimage
         timerlabel.text = String(countNum)
         self.view.addSubview(pressView)
         self.view.addSubview(colorView)
         self.view.sendSubviewToBack(colorView)
-        
+        colorNum = 0xc0ffee
+        colorView.alpha = 0.0
         timerlabel.font = UIFont(name: "QUIZ-SHOW", size: 24)
 
     }
@@ -54,8 +55,8 @@ class ViewController: UIViewController {
     func update() {
         timerlabel.text = String(countNum)
         --countNum
-        colorNum = 0x240C00
-
+        colorView.alpha += 0.004
+        
         colorView.backgroundColor = UIColorFromRGB(colorNum)
         self.view.addSubview(colorView)
         self.view.sendSubviewToBack(colorView)
@@ -77,7 +78,6 @@ class ViewController: UIViewController {
             timer.invalidate()
             countNum = 240
             ope = 0
-            colorNum = 0x240C00
             self.view.addSubview(colorView)
             self.view.sendSubviewToBack(colorView)
         }
